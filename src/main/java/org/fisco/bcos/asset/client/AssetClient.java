@@ -7,6 +7,7 @@ import java.math.BigInteger;
 import java.util.List;
 import java.util.Properties;
 
+import org.fisco.bcos.web3j.crypto.gm.GenCredential;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.fisco.bcos.asset.contract.Asset;
@@ -84,7 +85,7 @@ public class AssetClient {
 		Web3j web3j = Web3j.build(channelEthereumService, 1);
 
 		// init Credentials
-		Credentials credentials = Credentials.create(Keys.createEcKeyPair());
+		Credentials credentials = GenCredential.create();
 
 		setCredentials(credentials);
 		setWeb3j(web3j);

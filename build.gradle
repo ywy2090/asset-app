@@ -27,7 +27,7 @@ List logger = [
 dependencies {
     compile logger
     runtime logger
-    compile ("org.fisco-bcos:web3sdk:2.1.0")
+    compile ("org.fisco-bcos:web3sdk:2.5.1")
 }
 
 jar {
